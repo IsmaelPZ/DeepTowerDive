@@ -8,5 +8,11 @@ public class DeathZone : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+        else if (other.CompareTag("Coin"))
+        {
+            Destroy(other.gameObject); // Coin despawnt oben
+        }
     }
+
+
 }
